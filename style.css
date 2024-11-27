@@ -1,0 +1,731 @@
+body {
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    background-color: #000;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Список навігаційних посилань */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px; /* Згладжені кути */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Анімація натискання */
+.nav-links a:active {
+    transform: scale(0.95); /* Легке зменшення при натисканні */
+}
+
+.nav-links a.disc-link:hover {
+    background-color: red;
+}
+
+.nav-links a.thomas-link:hover {
+    background-color: yellow;
+    color: black; 
+}
+
+.nav-links a.books-link:hover {
+    background-color: blue;
+}
+
+.nav-links a.about-link:hover {
+    background-color: green;
+}
+
+/* Додатковий стиль для згладжених кутів */
+.nav-links a:hover {
+    border-radius: 8px; /* Згладжені кути з ефектом hover */
+}
+
+/* Загальний стиль для футера */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Стиль для тексту */
+.footer-text p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+/* Стиль для смайлика козла */
+.goat-emoji {
+    font-size: 24px;
+}
+
+/* Стиль для іконок */
+.footer-icons {
+    margin-top: 10px;
+}
+
+/* Стиль для кожної іконки */
+.footer-icon {
+    margin: 0 15px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icon:hover {
+    color: #0073e6;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    width: 100%;
+    border-bottom: 2px solid #f4f4f4;
+}
+.card-content {
+    padding: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card-content h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+.card-content p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+.home-link::before { content: "\f015"; }
+        .disc-link::before { content: "\f2c1"; }
+        .thomas-link::before { content: "\f007"; }
+        .books-link::before { content: "\f02d"; }
+        .about-link::before { content: "\f129"; }
+
+        .main-header {
+            position: relative;
+            background-image: url('img/4.png');
+            background-size: cover;
+            background-position: center;
+            height: 500px;;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .header-title {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            font-size: 150px;
+            border-radius: 10px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        .title {
+            margin-bottom: 20px;
+            font-size: 50px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+
+        .owl-carousel .item {
+            text-align: center;
+        }
+
+        .owl-carousel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gradient-line {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to right, red, yellow, green, blue);
+            color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .gradient-line h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .gradient-line p {
+            margin: 5px 0 0;
+            font-size: 1rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .btn-link {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background-color: gray;
+            transform: scale(1.05);
+        }
+
+        .black-line {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     
+        }
+
+        .black-line h1 {
+            margin: 0;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+    
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #333;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .main-text {
+            width: 70%;
+            padding-right: 20px;
+            color: #f4f4f4;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .main-text h1 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .main-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .image-container {
+            width: 30%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .tests-link {
+            margin-top: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .tests-link a {
+            font-size: 16px;
+            color: #1a73e8;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .tests-link a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+        }
+
+        .color-containers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .color-container {
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .red { background-color: #f44336; color: white; }
+        .yellow { background-color: #ffeb3b; color: black; }
+        .green { background-color: #4caf50; color: white; }
+        .blue { background-color: #2196f3; color: white; }
+
+        .color-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .color-container p {
+            font-size: 16px;
+        }
+
+        .color-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Стиль анімаційної кнопки */
+        .animated-button {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .animated-button:hover {
+            background-color: #1558b0;
+            transform: scale(1.1);
+        }
+  
+        .video-text-container {
+            display: flex;
+            background-color:#333;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .image-section {
+            width: 50%;
+            padding-right: 20px;
+        }
+        
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .text-section {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .text-section h2 {
+            margin-bottom: 10px;
+        }
+        
+        .text-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .video-frame {
+            margin-top: 20px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        h1, h2 {
+            font-size: 2em;
+        }
+        
+        .content-main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        
+        .content-col-left, .content-col-right {
+            width: 48%;
+        }
+        
+        .content-col-left img, .content-col-right img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .content-container-left, .content-container-right {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content-col-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        
+        .content-col-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .content-col-left .content-container-left {
+            margin-top: 20px;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .content-col-left, .content-col-right, .content-container-left, .content-container-right, .video-gallery-container {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        .video-container {
+            width: 100%;
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .video-title {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .video-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .video-gallery iframe {
+            width: 23%; /* Це дозволяє відео зайняти 4 місця в ряд */
+            height: 250px;
+            border: none;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        .unique-container-thomas-erikson {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .unique-container-thomas-erikson img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5; /* Напівпрозорість для фону */
+        }
+
+        .unique-container-thomas-erikson h1 {
+            position: relative;
+            font-family: Arial, sans-serif;
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .unique-divider-section {
+            width: 100%;
+            background: linear-gradient(to bottom, black, red);
+            padding: 20px 0;
+            text-align: center;
+            border: none; /* Забираємо стандартні однотонні лінії */
+        }
+        
+        .unique-divider-section p {
+            margin: 0 auto;
+            max-width: 80%; /* Обмежує ширину тексту */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .unique-book-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1rem;
+            text-align: left;
+            background-color: red; /* Червоний фон таблиці */
+            color: white; /* Білий текст */
+        }
+        
+        .unique-book-table th, 
+        .unique-book-table td {
+            padding: 15px;
+            border: 1px solid white; /* Білі рамки між комірками */
+            vertical-align: top;
+        }
+        
+        .unique-book-table th {
+            background-color: darkred; /* Темно-червоний для заголовків */
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .unique-book-table img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .unique-buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: red; /* Червоний текст кнопки */
+            background-color: white; /* Білий фон кнопки */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+        }
+        
+        .unique-buy-button:hover {
+            background-color: darkred; /* Темно-червоний фон при наведенні */
+            color: white; /* Білий текст при наведенні */
+        }
+
+        .unique-gradient-map-section {
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(to bottom, red, black);
+            padding: 20px 0;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .unique-gradient-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .unique-gradient-map-section iframe {
+            border: 2px solid white; 
+            border-radius: 10px; 
+        }
+
+        .author-page-title {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        /* Основний контейнер для фотографії та тексту */
+        .author-container-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+     
+        .author-photo {
+            max-width: 250px;
+            margin-right: 20px;
+        }
+
+        .author-text {
+            max-width: 600px;
+            color: black;
+            font-size: 1.2em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        .page-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        
+        /* Контейнер для автора */
+        .author-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            background-color: #555;
+            border-radius: 10px;
+            max-width: 800px;
+            animation: fadeIn 1.5s ease-out;
+        }
+        
+        /* Анімація для фотографії */
+        .author-photo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            opacity: 0;
+            animation: photoAppear 2s ease-out forwards;
+        }
+        
+        /* Анімація появи фотографії */
+        @keyframes photoAppear {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Текстовий контейнер */
+        .text-container {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+            opacity: 0;
+            animation: textSlide 1.5s ease-out forwards;
+        }
+        
+        /* Анімація для контейнера з текстом */
+        @keyframes textSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Загальна анімація для контейнера */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
